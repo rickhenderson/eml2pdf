@@ -1,0 +1,832 @@
+Received: from XCH213CNC.rim.net (10.3.27.118) by XCH211CNC.rim.net (10.3.27.116) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2308.27 via Mailbox
+ Transport; Tue, 5 Jul 2022 14:42:21 -0400
+Received: from XCH212CNC.rim.net (10.3.27.117) by XCH213CNC.rim.net (10.3.27.118) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2308.27; Tue, 5 Jul
+ 2022 14:42:21 -0400
+Received: from smtp-pg10.blackberry.com (100.64.197.21) by XCH212CNC.rim.net
+ (10.3.27.117) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2308.27 via Frontend
+ Transport; Tue, 5 Jul 2022 14:42:21 -0400
+Received: from pps.filterd (mhs400ykf.rim.net [127.0.0.1])	by mhs400ykf.rim.net
+ (8.17.1.5/8.17.1.5) with ESMTP id 265I54Q1025065	for
+ <rihenderson@blackberry.com>; Tue, 5 Jul 2022 14:42:21 -0400
+Received: from mhs213cnc-app.rim.net ([10.243.44.99])	by mhs400ykf.rim.net (PPS) with
+ ESMTPS id 3h2j772mrd-12	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384
+ bits=256 verify=NOT)	for <rihenderson@blackberry.com>; Tue, 05 Jul 2022
+ 14:42:20 -0400
+Received: from ip1.threatpost.com ([185.31.80.126])  by mx14.blackberry.com with
+ ESMTP/TLS/DHE-RSA-AES256-GCM-SHA384; 05 Jul 2022 14:42:13 -0400
+Received: by ip1.threatpost.com id hoi3083005sa for <rihenderson@blackberry.com>; Tue,
+ 5 Jul 2022 18:42:11 +0000 (envelope-from <mail@threatpost.com>)
+Authentication-Results: rim.net;	spf=pass smtp.mailfrom=mail@threatpost.com;	dkim=pass
+ header.s=expertsender1k header.d=threatpost.com;	dmarc=pass
+ header.from=threatpost.com
+IronPort-HdrOrdr: =?us-ascii?q?A9a23=3A8Pnj26wl8xjJcHYHHpqcKrPwHb1zdoMgy1kn?=
+ =?us-ascii?q?xilNoHtuE/Bw9vrBoB1/73XJYVkqNE3I9erwW5VoOEmskKKduLNhWYtKPzOKhI?= =?us-ascii?q?LLFu5fBOLZqlWKJ8SXzJ876U4KSchD4bPLfDpHpPe/xAWjCd4vzJ274Lml7N2u?= =?us-ascii?q?qUtQcQ=3D=3D?=
+X-MGA-submission: =?us-ascii?q?MDFVJIGwM1JEwrMK+VxQoXQvbXPchz3C2J3CHq?=
+ =?us-ascii?q?vSYrKzBaPBsNXTADOHV/WWfxI58JJXTxhZAtTzpZsvL1oHNMyAjjnKwW?=
+ =?us-ascii?q?fh6Q/N/4lhgKzSj4V3xgGlHzMyVk0mPUYhRp39ZMZLITFO0667XOa8gH?=
+ =?us-ascii?q?QM?=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; q=dns/txt; d=threatpost.com;
+ s=expertsender1k; h=Date:Subject:From:To;
+ bh=fP5N+EDjY6JtANAkHcmqU3cyxTjhf9w8anohgEssFq8=;
+ b=XBJYuRX9Wm92TdYRV1WB3cHePzWk/jaKvatzalN53j5ZN2nGdcZQtrJx4puyhErwRHhC
+ 4JPWF2sl8qNKqMDM2m6/kw+TL+KktYpnjqGcdnkFw4KhHyMfqK58FaIL0B5q481XqsQVnp
+ GizqwoXwEO6nTY9yY+ZGdqvQmttC6KlWU=
+Date: Tue, 05 Jul 2022 18:42:11 +0000
+Message-ID: <40115=8f3ab66f-4b42-4c33-8c11-5da659cfbaf8=7=60508@links.threatpost.com>
+Subject: =?utf-8?Q?Iranian_Steel_Plants_Attacked;_Chrome_Bug_Patched?=
+From: "Threatpost Today" <mail@threatpost.com>
+To: "Rick Henderson" <rihenderson@blackberry.com>
+List-Unsubscribe: <mailto:nlu=43-=ovzy25oxs1bkt_so6hon_u04~=2=cben=219b4126@f.threatpost.com>,
+ <https://links.threatpost.com/u/2GO/dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/48e38f96>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Message-Type: newsletter
+X-Proofpoint-GUID: 6ChXz01MqF73ldgv7n5CsST8wBp5fg23
+X-Proofpoint-ORIG-GUID: 6ChXz01MqF73ldgv7n5CsST8wBp5fg23
+X-CLX-Response: 1TFkXGxoaGhEKTHoXGxoaGhEKWUQXZEJ+Q2B9S01iEnMRClhYF2VBRkJpe2d
+ aHnxYEQp4Thdoe1JrSFliRF9fTxEKeUwXYx1eY0scY18fHEcRCkNIFwcbEQpDWRcHGB4eEQpDSR
+ caBBoaGhEKWU0Xbk9GQ1xPWBEKX1kXGx0cEQpfTRdnZnIRCllJFxpxGhAadwYbHxxxGxkYGxoQG
+ RwedwYYGgYaEQpZXhdsbHkRCklGF0hGS0lBSE9YWFN1WlhFTl9JXkNFRBEKQ04XHGlCclAaG2db
+ bB0ZRk5NXB1EH2lZeX4SXWhaH0xNGBkRClhcFx8EGgQYHxwFGxoEGxsaBB0EGxkYEBseGh8aEQp
+ eWRdwAUNbRREKTVwXGR0fEQpMWhdoaU1NXREKTEYXb2tra2trEQpCTxdgfHsSRxpORBhtaREKQ1
+ oXGxIfBBkbBBIaBBsYHBEKQl4XGxEKQkYXZFBZWX9dQWtzXGMRCkJHF2RFbVlfaX9bH31wEQpCX
+ BcbEQpeThcbEQpCSxdoe1JrSFliRF9fTxEKQkkXaHtSa0hZYkRfX08RCkJFF25FfR9DU3pmXWFJ
+ EQpCThdoe1JrSFliRF9fTxEKQkwXZUFGQml7Z1oefFgRCkJsF2xAX3ljRBpsaUFfEQpCQBdnbFt
+ JQG8dfAUdfxEKQlgXZlhOfFpDWFBLemARClpYFx4RCnlDF2RBXUFFTH59cFNdEQpwaBdjUx1dXU
+ 4eZ1xIcxAaEQpwaBdjXRxyfmd7RVtARRAaEQpwaBdpeht6fxJdZHoZSxAfHxEKcGgXZ1xcE15CZ
+ HptT1gQGhEKcGgXZnhZUwV/ZXBZWH0QGhEKcGgXYBhZenNYaxt6bk0QGBoRCnBoF2lLaWtMbE8a
+ GntLEBoRCnBoF29fWFNBXmMfQ0Z9EBoRCnB9F2NSHgF7XmhMcF9/EBoRCnB9F29PekJCSx1HSXB
+ +EBoRCnB9F2ZJbGBBZh15RwVYEBoRCnB9F28ceRlMYH9heF5uEBoRCnB9F2lcTE5MYF9BegUTEB
+ oRCnB9F2VHHn9pfR9icEVpEBoRCnB9F21GfXlTb0taRxpFEBoRCnB9F24ScHpSSEQTc1xGEBoRC
+ nB9F2ZlR0FFGX1yegFgEBoRCnB9F2doUF55Yn1QHGwSEBoRCnB9F21iHwVtXxhAc3tOEBoRCnB9
+ F2BYeG0aGHBAQmwZEBoRCnB9F2ljXFpcc2diZklPEBoRCnB9F24bYX15f1NtTx5fEBoRCnB9F2t
+ neEVOGExnH2FzEBoRCnB/F20SXGtJEkJyfx19EBseHBEKcF8XbVxlZ3hIQAV7HxgQGRoRCnBfF2
+ gdcE5vT2VSGEtCEB4SEQpwXxdlZ215fGxiEx5eXBAcGhEKcF8XYUh4SVATW3J9U0MQGhEKcF8XY
+ hwcT1pwel1FAXIQHhIRCnBfF2cYUh9+cxwBXG1jEBoRCnB/F2l9Xl0BXlx/GE1iEB4fEQpwXxdm
+ TFNvR3xzQl1LYhAaEQpwXxdobmBufUtoGWluSBAaEQpwXxdmX15kW1trQnIeQBAaEQpwXxduZR5
+ uch5oE21dZxAaEQpwXxdpcmV7En0TaR5cUBAaEQpwXxdkZ0FHf1gfe38SQxAaEQpwfxdib2ldaV
+ 5vHRoeTxAaEQpwXxdnYR97UG5bBWxbSRAaEQpwXxdrY0d5GF1QEkBHfBAaEQpwbBdlZh16aHtdW
+ AEFXhAaEQptfhcaEQpYTRdLESA=
+X-CLX-Shades: Deliver
+MIME-Version: 1.0
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.205,Aquarius:18.0.883,Hydra:6.0.517,FMLib:17.11.122.1
+ definitions=2022-07-05_16,2022-06-28_01,2022-06-22_01
+X-Proofpoint-Spam-Reason: eusafe
+Return-Path: mail@threatpost.com
+X-MS-Exchange-Organization-Network-Message-Id: 2f4b34c1-892e-4521-58d9-08da5eb61872
+X-MS-Exchange-Organization-AVStamp-Enterprise: 1.0
+X-MS-Exchange-Organization-AuthSource: XCH212CNC.rim.net
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.2765432
+X-MS-Exchange-Processed-By-BccFoldering: 15.01.2308.027
+Sender: "Threatpost Today" <mail@threatpost.com>
+X-MS-Exchange-Organization-OriginalClientIPAddress: 100.64.197.21
+X-MS-Exchange-Organization-OriginalServerIPAddress: 10.3.27.117
+Content-Type: multipart/alternative;
+ boundary="--_=_NextPart1593_8e920c31-002c-445d-898f-a6939d355d0e"
+
+----_=_NextPart1593_8e920c31-002c-445d-898f-a6939d355d0e
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+CAUTION - This email is from an external source=2E Please be cautious with =
+links and attachments=2E (go/taginfo)=09
+
+Welcome to Threatpost Today, our daily roundup of the latest cybersecurity =
+news=2E =E2=80=8C=20
+
+View this email in your browser <https://urldefense=2Ecom/v3/__https://link=
+s=2Ethreatpost=2Ecom/c/2GO/Ix8/dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/c1959845__;!!=
+COg3wY07Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6K=
+luJApc18QjaN9Y_NwTnF8$>=20
+
+ <https://urldefense=2Ecom/v3/__https://links=2Ethreatpost=2Ecom/c/2GO/IxY/=
+dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/6cfd0231__;!!COg3wY07Hnb7!qXQ-ZJUN3A6jxzgtFA=
+H9qZ29HF4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6KluJApc18QjaN9YU9l-U4s$>  =09
+
+Welcome to Threatpost Today, our daily roundup of the latest cyber-news <ht=
+tps://urldefense=2Ecom/v3/__https://links=2Ethreatpost=2Ecom/c/2GO/Ixe/dYv8=
+CD26kDGkbN_Jgxu8uy/i/Ezx/F/955411c2__;!!COg3wY07Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ=
+29HF4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6KluJApc18QjaN9YSlgjsck$> =2E
+
+
+Follow us on LinkedIn <https://urldefense=2Ecom/v3/__https://links=2Ethreat=
+post=2Ecom/c/2GO/Ixf/dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/d9e73b6b__;!!COg3wY07Hn=
+b7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6KluJApc18Qj=
+aN9Y29ZSQ3w$> , Twitter <https://urldefense=2Ecom/v3/__https://links=2Ethre=
+atpost=2Ecom/c/2GO/Ixu/dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/2c77790f__;!!COg3wY07=
+Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6KluJApc18=
+QjaN9YEmHFR50$>  and Facebook <https://urldefense=2Ecom/v3/__https://links=
+=2Ethreatpost=2Ecom/c/2GO/Ix0/dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/70bcaf03__;!!C=
+Og3wY07Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6Kl=
+uJApc18QjaN9YLMmkQpg$> , and visit us at threatpost=2Ecom <https://urldefen=
+se=2Ecom/v3/__https://links=2Ethreatpost=2Ecom/c/2GO/Ily/dYv8CD26kDGkbN_Jgx=
+u8uy/i/Ezx/F/6f212e46__;!!COg3wY07Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF4U1tSRWRMO=
+94ykcLMHDhSgF24wX_zdy5kr6KluJApc18QjaN9YTtk716o$> =2E
+
+
+Latest Cyberattack Against Iran Part of Ongoing Campaign <https://urldefens=
+e=2Ecom/v3/__https://links=2Ethreatpost=2Ecom/c/2GO/IlF/dYv8CD26kDGkbN_Jgxu=
+8uy/i/Ezx/F/da3b171c__;!!COg3wY07Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF4U1tSRWRMO9=
+4ykcLMHDhSgF24wX_zdy5kr6KluJApc18QjaN9Yc3g7dAI$>=20
+
+
+Iran=E2=80=99s steel manufacturing industry is victim to ongoing cyberattac=
+ks that previously impacted the country=E2=80=99s rail system=2E
+
+Read More <https://urldefense=2Ecom/v3/__https://links=2Ethreatpost=2Ecom/c=
+/2GO/Ilc/dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/a6d9bf3c__;!!COg3wY07Hnb7!qXQ-ZJUN3=
+A6jxzgtFAH9qZ29HF4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6KluJApc18QjaN9YRovB6B0$=
+>=20
+
+July 5, 2022
+
+=09
+ <https://urldefense=2Ecom/v3/__https://links=2Ethreatpost=2Ecom/c/2GO/Ilm/=
+dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/8e96dd28__;!!COg3wY07Hnb7!qXQ-ZJUN3A6jxzgtFA=
+H9qZ29HF4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6KluJApc18QjaN9Y4kwd4Bw$>  =09
+=09
+
+Google Patches Actively Exploited Chrome Bug <https://urldefense=2Ecom/v3/_=
+_https://links=2Ethreatpost=2Ecom/c/2GO/Ilb/dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/=
+2b985b64__;!!COg3wY07Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF4U1tSRWRMO94ykcLMHDhSgF=
+24wX_zdy5kr6KluJApc18QjaN9Y019dS9w$>=20
+
+
+The heap buffer overflow issue in the browser=E2=80=99s WebRTC engine could=
+ allow attackers to execute arbitrary code=2E
+
+Read More <https://urldefense=2Ecom/v3/__https://links=2Ethreatpost=2Ecom/c=
+/2GO/Ilo/dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/4f6413d9__;!!COg3wY07Hnb7!qXQ-ZJUN3=
+A6jxzgtFAH9qZ29HF4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6KluJApc18QjaN9YxZ27IAw$=
+>=20
+
+July 5, 2022
+
+Thanks for reading! More news tomorrow,
+ <http://img-s4-russia=2Eesv2=2Ecom/kasperskycom/threatpost/tom=2EPNG> =09
+
+Jeff Esposito
+
+Publisher
+
+Threatpost
+
+ <https://links=2Ethreatpost=2Ecom/o/2GO/dYv8CD26kDGkbN_Jgxu8uy/Ezx/F/825da=
+d54>=20
+
+----_=_NextPart1593_8e920c31-002c-445d-898f-a6939d355d0e
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"http://www=2Ew3=2Eorg/1999/xhtml" xmlns:v=3D"=
+urn:schemas-microsoft-com:vml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width">
+<meta name=3D"HandheldFriendly" content=3D"true">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<!--[if gte IE 7]><html class=3D"ie8plus" xmlns=3D"http://www=2Ew3=2Eorg/19=
+99/xhtml"><![endif]-->
+<!--[if IEMobile]><html class=3D"ie8plus" xmlns=3D"http://www=2Ew3=2Eorg/19=
+99/xhtml"><![endif]-->
+<meta name=3D"format-detection" content=3D"telephone=3Dno">
+<meta name=3D"x-apple-disable-message-reformatting">
+<meta name=3D"generator" content=3D"EDMdesigner, www=2Eedmdesigner=2Ecom">
+<title>Iranian Steel Plants Attacked; Chrome Bug Patched</title>
+
+<style type=3D"text/css">@import url("https://fonts=2Egoogleapis=2Ecom/css?=
+family=3DOpen+Sans|Josefin+Slab|Cormorant|Arvo|Lato|Vollkorn|Abril+Fatface:=
+cursive|Ubuntu|PT+Sans|PT+Serif|Old+Standard+TT|Roboto|Roboto+Slab|PT+Mono:=
+monospace|Gravitas+One:cursive|Oswald|Montserrat|Playfair+Display|Unica+One=
+:cursive|Amatic+SC:cursive|Alegreya|Lobster:cursive|Work+Sans|Libre+Baskerv=
+ille|Darker+Grotesque");</style>
+
+<style type=3D"text/css" media=3D"screen">
+* {line-height: inherit;}
+=2EExternalClass * { line-height: 100%; }
+body, p{margin:0; padding:0; margin-bottom:0; -webkit-text-size-adjust:none=
+; -ms-text-size-adjust:none;} img{line-height:100%; outline:none; text-deco=
+ration:none; -ms-interpolation-mode: bicubic;} a img{border: none;} a, a:li=
+nk, =2Eno-detect-local a, =2EappleLinks a{color:#5555ff text-decoration: un=
+derline;} =2EExternalClass {display: block width:100%;} =2EExternalClass, =
+=2EExternalClass p, =2EExternalClass span, =2EExternalClass font, =2EExtern=
+alClass td, =2EExternalClass div { line-height: inherit; } table td {border=
+-collapse:collapse;mso-table-lspace: 0pt; mso-table-rspace: 0pt;} =2Emobile=
+_link a[href^=3D"tel"], =2Emobile_link a[href^=3D"sms"] {text-decoration: d=
+efault; color: #5555ff pointer-events: auto; cursor: default;} =2Eno-detect=
+ a{text-decoration: none; color: #5555ff;
+pointer-events: auto; cursor: default;} {color: #5555ff;} span {color: inhe=
+rit; border-bottom: none;} span:hover { background-color: transparent; }
+a[x-apple-data-detectors] {color: inherit text-decoration: none font-size: =
+inherit font-family: inherit font-weight: inherit line-height: inherit }
+
+=2Enounderline {text-decoration: none}
+h1, h2, h3 { margin:0; padding:0; }
+p {Margin: 0px }
+
+table[class=3D"email-root-wrapper"] { width: 600px; }
+
+body {
+}
+body { min-width: 280px; width: 100%;}
+
+</style>
+
+<style>
+@media screen and (min-width: 600px) {
+=2Edh {
+display: none;
+}
+
+=2Eemail-root-wrapper {=20
+width: 600px;
+max-width: 100%;
+}
+}
+
+@media only screen and (max-width: 599px),
+only screen and (max-device-width: 599px),
+only screen and (max-width: 400px),
+only screen and (max-device-width: 400px) {
+ =2Eemail-root-wrapper { width: 100% }
+ =2Efull-width { width: 100% height: auto text-align:center;}
+ =2Efullwidthhalfleft {width:100%}
+ =2Efullwidthhalfright {width:100%}
+ =2Efullwidthhalfinner {width:100% margin: 0 auto float: none margin-left: =
+auto margin-right: auto clear:both }
+ =2Ehide { display:none width:0pxheight:0px overflow:hidden; }
+=09
+}
+</style>
+<style>
+@media only screen and (min-width: 600px) {
+ =20
+}
+@media only screen and (max-width: 599px),
+only screen and (max-device-width: 599px),
+only screen and (max-width: 400px),
+only screen and (max-device-width: 400px) {
+  table[class=3D"email-root-wrapper"] { width: 100% }
+  td[class=3D"wrap"] =2Efull-width { width: 100% height: auto}
+
+  td[class=3D"wrap"] =2Efullwidthhalfleft {width:100%}
+  td[class=3D"wrap"] =2Efullwidthhalfright {width:100%}
+  td[class=3D"wrap"] =2Efullwidthhalfinner {width:100% margin: 0 auto float=
+: none margin-left: auto margin-right: auto clear:both }
+  td[class=3D"wrap"] =2Ehide { display:none width:0px;height:0px; overflow:=
+hidden; }
+
+  =2Eedm-social {width: 100%}
+ =20
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  =2Eimg590x167 { width: 590px height: 167px}
+=2Eimg600x154 { width: 600px height: 154px}
+=2Eimg76x41 { width: 76px height: 41px}
+
+}
+</style>
+
+<!--[if (gte mso 9)|(IE)]>
+	<style>
+		=2Edh {
+			display: none;
+		}
+
+		=2Edh table {
+			mso-hide: all;
+		}
+	</style>
+<![endif]-->
+
+<!--[if (gte IE 7) & (vml)]>
+<style type=3D"text/css">
+html, body {margin:0 padding:0px}
+img=2Efull-width { position: relative }
+
+=2Eimg590x167 { width: 590px height: 167px}
+=2Eimg600x154 { width: 600px height: 154px}
+=2Eimg76x41 { width: 76px height: 41px}
+
+</style>
+<![endif]-->
+
+<!--[if gte mso 9]>
+<style type=3D"text/css">
+=2Emso-font-fix-arial { font-family: Arial, sans-serif;}
+=2Emso-font-fix-georgia { font-family: Georgia, sans-serif;}
+=2Emso-font-fix-tahoma { font-family: Tahoma, sans-serif;}
+=2Emso-font-fix-times_new_roman { font-family: 'Times New Roman', sans-seri=
+f;}
+=2Emso-font-fix-trebuchet_ms { font-family: 'Trebuchet MS', sans-serif;}
+=2Emso-font-fix-verdana { font-family: Verdana, sans-serif;}
+</style>
+<![endif]-->
+
+<!--[if gte mso 9]>
+<style type=3D"text/css">
+table, td {
+border-collapse: collapse
+mso-table-lspace: 0px
+mso-table-rspace: 0px
+}
+
+=2Eemail-root-wrapper { width 600px}
+=2Eimglink { font-size: 0px; }
+
+</style>
+<![endif]-->
+
+<!--[if gte mso 15]>
+<style type=3D"text/css">
+table {
+font-size:0px;
+mso-margin-top-alt:0px;
+}
+
+=2Efullwidthhalfleft {
+width: 49%
+float:left
+}
+
+=2Efullwidthhalfright {
+width: 50%
+float:right
+}
+</style>
+<![endif]-->
+<style type=3D"text/css" media=3D"(pointer) and (min-color-index:0)">
+html, body {background-image: none background-color: transparent margin:0 p=
+adding:0}
+</style>
+
+<style>=2Ees-preheader { display:none visibility:hidden; opacity:0; color:t=
+ransparent; height:0; width:0; max-height:0; overflow:hidden; } </style></h=
+ead>
+<body leftmargin=3D"0" marginwidth=3D"0" topmargin=3D"0" marginheight=3D"0"=
+ offset=3D"0" style=3D"font-family:Arial, sans-serif; font-size:0px;margin:=
+0;padding:0;">
+<div>
+<table align=3D"center" border=3D"1" cellpadding=3D"0" cellspacing=3D"0" bg=
+color=3D"C6AA32"><tr><td align=3D"center" height=3D"0" width=3D"100%"><b> C=
+AUTION</b> - This email is from an external source=2E Please be cautious wi=
+th links and attachments=2E (go/taginfo)</td></tr></table><br>
+</div><span class=3D"es-preheader" style=3D"display:blockfont-size:0px;font=
+-color:#ffffff;">Welcome to Threatpost Today, our daily roundup of the late=
+st cybersecurity news=2E&nbsp;=E2=80=8C</span>
+<!--[if t]><![endif]--><!--[if t]><![endif]--><!--[if t]><![endif]--><!--[i=
+f t]><![endif]--><!--[if t]><![endif]--><!--[if t]><![endif]-->
+<style>
+@media screen and (min-width: 600px) {
+=2Edh {
+display: none;
+}
+
+=2Eemail-root-wrapper {=20
+width: 600px;
+max-width: 100%;
+}
+}
+
+@media all and (max-width: 599px) {
+=2Ehide {
+display:none=20
+width:0px
+height:0px=20
+overflow: hidden=20
+}
+}
+</style>
+  <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+height=3D"100%" width=3D"100%" style=3D"margin:0; padding:0; width:100%">
+    <tr>
+        <td class=3D"wrap" align=3D"center" valign=3D"top" width=3D"100%">
+          <center>
+<!-- content -->
+<div style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"600" align=3D"center" s=
+tyle=3D"max-width:600px;min-width:240px;margin:0 auto" class=3D"email-root-=
+wrapper">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td valign=3D"top" style=3D"padding:5px"><div style=3D"text-align:left;font=
+-family:'Times New Roman';font-size:12px;color:#7e7e7e;line-height:14px;mso=
+-line-height:exactly;mso-text-raise:1px"><p style=3D"padding: 0; margin: 0;=
+text-align: right;"><span style=3D"font-family:Arial;"><a href=3D"https://u=
+rldefense=2Ecom/v3/__https://links=2Ethreatpost=2Ecom/c/2GO/Ix8/dYv8CD26kDG=
+kbN_Jgxu8uy/i/Ezx/F/c1959845__;!!COg3wY07Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF4U1=
+tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6KluJApc18QjaN9Y_NwTnF8$" style=3D"color: #9=
+99999 text-decoration: underline" target=3D"_blank"><font style=3D" color:#=
+999999;">View this email in your browser</font></a></span></p></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"600" align=3D"center" s=
+tyle=3D"max-width:600px;min-width:240px;margin:0 auto" class=3D"email-root-=
+wrapper">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+
+<td valign=3D"top" style=3D"padding-bottom:10px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" bgco=
+lor=3D"#ffffff" style=3D"background-color:#ffffff">
+<tr>
+
+<td valign=3D"top" style=3D"padding-top:10px;padding-right:5px;padding-left=
+:5px">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr>
+<td style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" clas=
+s=3D"full-width">
+<tr>
+
+<td valign=3D"top" align=3D"center" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"590" style=
+=3D"border:0px none" class=3D"full-width">
+<tr>
+
+<td valign=3D"top" style=3D"padding:0px"><a href=3D"https://urldefense=2Eco=
+m/v3/__https://links=2Ethreatpost=2Ecom/c/2GO/IxY/dYv8CD26kDGkbN_Jgxu8uy/i/=
+Ezx/F/6cfd0231__;!!COg3wY07Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF4U1tSRWRMO94ykcLM=
+HDhSgF24wX_zdy5kr6KluJApc18QjaN9YU9l-U4s$" target=3D"_blank" class=3D"imgli=
+nk"><img src=3D"https://links=2Ethreatpost=2Ecom/Content/i2/40115/HostedIma=
+ges/1992/TP_eLetter_banner_Centered=2Epng" width=3D"590" height=3D"167" alt=
+=3D"" border=3D"0" style=3D"display:block;max-width:100%;height:auto" class=
+=3D"full-width img590x167"></a>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td valign=3D"top" style=3D"padding-top:10px;padding-right:5px;padding-bott=
+om:5px;padding-left:5px"><div style=3D"text-align:left;font-family:'Times N=
+ew Roman';font-size:16px;color:#7e7e7e;line-height:18px;mso-line-height:exa=
+ctly;mso-text-raise:1px"><p style=3D"padding: 0; margin: 0;text-align: cent=
+er;"><span style=3D"font-family:Arial;"><em>Welcome to <strong>Threatpost T=
+oday,</strong> our daily roundup of the latest <a href=3D"https://urldefens=
+e=2Ecom/v3/__https://links=2Ethreatpost=2Ecom/c/2GO/Ixe/dYv8CD26kDGkbN_Jgxu=
+8uy/i/Ezx/F/955411c2__;!!COg3wY07Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF4U1tSRWRMO9=
+4ykcLMHDhSgF24wX_zdy5kr6KluJApc18QjaN9YSlgjsck$" style=3D"color: #7e7e7e te=
+xt-decoration: none" class=3D"nounderline" target=3D"_blank"><font style=3D"=
+ color:#7e7e7e;">cyber-news</font></a>=2E</em></span></p><p style=3D"paddin=
+g: 0; margin: 0;text-align: center;"><br><span style=3D"font-family:Arial;"=
+><em>Follow us on <u><a href=3D"https://urldefense=2Ecom/v3/__https://links=
+=2Ethreatpost=2Ecom/c/2GO/Ixf/dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/d9e73b6b__;!!C=
+Og3wY07Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6Kl=
+uJApc18QjaN9Y29ZSQ3w$" style=3D"color: #7e7e7e text-decoration: none" class=
+=3D"nounderline" target=3D"_blank"><font style=3D" color:#7e7e7e;"><span st=
+yle=3D"color:#ff0000;">LinkedIn</span></font></a></u>, <u><a href=3D"https:=
+//urldefense=2Ecom/v3/__https://links=2Ethreatpost=2Ecom/c/2GO/Ixu/dYv8CD26=
+kDGkbN_Jgxu8uy/i/Ezx/F/2c77790f__;!!COg3wY07Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF=
+4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6KluJApc18QjaN9YEmHFR50$" style=3D"color:=
+ #7e7e7e text-decoration: none" class=3D"nounderline" target=3D"_blank"><fo=
+nt style=3D" color:#7e7e7e;"><span style=3D"color:#ff0000;">Twitter</span><=
+/font></a></u> and <u><a href=3D"https://urldefense=2Ecom/v3/__https://link=
+s=2Ethreatpost=2Ecom/c/2GO/Ix0/dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/70bcaf03__;!!=
+COg3wY07Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6K=
+luJApc18QjaN9YLMmkQpg$" style=3D"color: #7e7e7e text-decoration: none" clas=
+s=3D"nounderline" target=3D"_blank"><font style=3D" color:#7e7e7e;"><span s=
+tyle=3D"color:#ff0000;">Facebook</span></font></a></u>, and visit us at <u>=
+<a href=3D"https://urldefense=2Ecom/v3/__https://links=2Ethreatpost=2Ecom/c=
+/2GO/Ily/dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/6f212e46__;!!COg3wY07Hnb7!qXQ-ZJUN3=
+A6jxzgtFAH9qZ29HF4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6KluJApc18QjaN9YTtk716o$=
+" style=3D"color: #7e7e7e text-decoration: none" class=3D"nounderline" targ=
+et=3D"_blank"><font style=3D" color:#7e7e7e;"><span style=3D"color:#ff0000;=
+">threatpost=2Ecom</span></font></a></u>=2E</em></span></p></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"600" align=3D"center" s=
+tyle=3D"max-width:600px;min-width:240px;margin:0 auto" class=3D"email-root-=
+wrapper">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td valign=3D"top" style=3D"padding-top:5px;padding-right:5px;padding-botto=
+m:5px"><div style=3D"text-align:left;font-family:Arial;font-size:16px;color=
+:#333333;line-height:20px;mso-line-height:exactly;mso-text-raise:2px"><h1 s=
+tyle=3D"font-family:Arial; font-size: 20px; color: #333333; font-weight: bo=
+ld; font-style: normal; line-height: 23px; mso-line-height: exactly; mso-te=
+xt-raise: 1px; padding: 0; margin: 0;"><span style=3D"font-family:Arial;"><=
+a href=3D"https://urldefense=2Ecom/v3/__https://links=2Ethreatpost=2Ecom/c/=
+2GO/IlF/dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/da3b171c__;!!COg3wY07Hnb7!qXQ-ZJUN3A=
+6jxzgtFAH9qZ29HF4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6KluJApc18QjaN9Yc3g7dAI$"=
+ style=3D"color: #333333 text-decoration: none" class=3D"nounderline" targe=
+t=3D"_blank"><font style=3D" color:#333333;">Latest Cyberattack Against Ira=
+n Part of Ongoing Campaign</font></a></span></h1><p style=3D"padding: 0; ma=
+rgin: 0;">Iran=E2=80=99s steel manufacturing industry is victim to ongoing =
+cyberattacks that previously impacted the country=E2=80=99s rail system=2E<=
+/p><p style=3D"padding: 0; margin: 0;"><u><strong><a href=3D"https://urldef=
+ense=2Ecom/v3/__https://links=2Ethreatpost=2Ecom/c/2GO/Ilc/dYv8CD26kDGkbN_J=
+gxu8uy/i/Ezx/F/a6d9bf3c__;!!COg3wY07Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF4U1tSRWR=
+MO94ykcLMHDhSgF24wX_zdy5kr6KluJApc18QjaN9YRovB6B0$" style=3D"color: #333333=
+ text-decoration: none" class=3D"nounderline" target=3D"_blank"><font style=
+=3D" color:#333333;">Read More</font></a></strong></u></p><p style=3D"paddi=
+ng: 0; margin: 0;"><span style=3D"font-family:Arial;"><em>July 5, 2022</em>=
+</span></p></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"600" align=3D"center" s=
+tyle=3D"max-width:600px;min-width:240px;margin:0 auto" class=3D"email-root-=
+wrapper">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+
+<td valign=3D"top" style=3D"padding:10px">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr>
+<td style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" styl=
+e=3D"border-top:2px solid #555555">
+<tr>
+
+<td valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr>
+<td style=3D"padding:0px"></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"600" align=3D"center" s=
+tyle=3D"max-width:600px;min-width:240px;margin:0 auto" class=3D"email-root-=
+wrapper">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" clas=
+s=3D"full-width">
+<tr>
+
+<td valign=3D"top" align=3D"center" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"600" style=
+=3D"border:0px none" class=3D"full-width">
+<tr>
+
+<td valign=3D"top" style=3D"padding:0px"><a href=3D"https://urldefense=2Eco=
+m/v3/__https://links=2Ethreatpost=2Ecom/c/2GO/Ilm/dYv8CD26kDGkbN_Jgxu8uy/i/=
+Ezx/F/8e96dd28__;!!COg3wY07Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF4U1tSRWRMO94ykcLM=
+HDhSgF24wX_zdy5kr6KluJApc18QjaN9Y4kwd4Bw$" target=3D"_blank" class=3D"imgli=
+nk"><img src=3D"https://links=2Ethreatpost=2Ecom/Content/i2/40115/HostedIma=
+ges/3791/intel_970x250=2Ejpg" width=3D"600" height=3D"154" alt=3D"" border=
+=3D"0" style=3D"display:block;max-width:100%;height:auto" class=3D"full-wid=
+th img600x154"></a>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"600" align=3D"center" s=
+tyle=3D"max-width:600px;min-width:240px;margin:0 auto" class=3D"email-root-=
+wrapper">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+
+<td valign=3D"top" style=3D"padding:10px">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr>
+<td style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" styl=
+e=3D"border-top:2px solid #555555">
+<tr>
+
+<td valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr>
+<td style=3D"padding:0px"></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"600" align=3D"center" s=
+tyle=3D"max-width:600px;min-width:240px;margin:0 auto" class=3D"email-root-=
+wrapper">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td valign=3D"top" style=3D"padding-top:5px;padding-right:5px;padding-botto=
+m:5px"><div style=3D"text-align:left;font-family:Arial;font-size:16px;color=
+:#333333;line-height:20px;mso-line-height:exactly;mso-text-raise:2px"><h1 s=
+tyle=3D"font-family:Arial; font-size: 20px; color: #333333; font-weight: bo=
+ld; font-style: normal; line-height: 23px; mso-line-height: exactly; mso-te=
+xt-raise: 1px; padding: 0; margin: 0;"><span style=3D"font-family:Arial;"><=
+a href=3D"https://urldefense=2Ecom/v3/__https://links=2Ethreatpost=2Ecom/c/=
+2GO/Ilb/dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/2b985b64__;!!COg3wY07Hnb7!qXQ-ZJUN3A=
+6jxzgtFAH9qZ29HF4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6KluJApc18QjaN9Y019dS9w$"=
+ style=3D"color: #333333 text-decoration: none" class=3D"nounderline" targe=
+t=3D"_blank"><font style=3D" color:#333333;">Google Patches Actively Exploi=
+ted Chrome Bug</font></a></span></h1><p style=3D"padding: 0; margin: 0;">Th=
+e heap buffer overflow issue in the browser=E2=80=99s WebRTC engine could a=
+llow attackers to execute arbitrary code=2E</p><p style=3D"padding: 0; marg=
+in: 0;"><u><strong><a href=3D"https://urldefense=2Ecom/v3/__https://links=
+=2Ethreatpost=2Ecom/c/2GO/Ilo/dYv8CD26kDGkbN_Jgxu8uy/i/Ezx/F/4f6413d9__;!!C=
+Og3wY07Hnb7!qXQ-ZJUN3A6jxzgtFAH9qZ29HF4U1tSRWRMO94ykcLMHDhSgF24wX_zdy5kr6Kl=
+uJApc18QjaN9YxZ27IAw$" style=3D"color: #333333 text-decoration: none" class=
+=3D"nounderline" target=3D"_blank"><font style=3D" color:#333333;">Read Mor=
+e</font></a></strong></u></p><p style=3D"padding: 0; margin: 0;"><span styl=
+e=3D"font-family:Arial;"><em>July 5, 2022</em></span></p></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"600" align=3D"center" s=
+tyle=3D"max-width:600px;min-width:240px;margin:0 auto" class=3D"email-root-=
+wrapper">
+<tr>
+<td valign=3D"top" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" styl=
+e=3D"border:0px none">
+<tr>
+
+<td valign=3D"top" style=3D"padding:5px">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr>
+<td style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td valign=3D"top" style=3D"padding-right:5px;padding-bottom:5px"><div styl=
+e=3D"text-align:left;font-family:'Times New Roman';font-size:20px;color:#7e=
+7e7e;line-height:20px;mso-line-height:exactly"><span style=3D"font-family: =
+Arial; font-size: 20px;"><em>Thanks for reading! More news tomorrow,</em></=
+span></div></td>
+</tr>
+</table>
+
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+
+<td valign=3D"top" align=3D"left" style=3D"padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"76" style=
+=3D"border:0px none">
+<tr>
+
+<td valign=3D"top" style=3D"padding:0px"><img src=3D"http://img-s4-russia=
+=2Eesv2=2Ecom/kasperskycom/threatpost/tom=2EPNG" width=3D"76" height=3D"41"=
+ alt=3D"Tom" border=3D"0" style=3D"display:block;font-size:14px" class=3D"i=
+mg76x41">
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td valign=3D"top" style=3D"padding-top:5px;padding-right:5px;padding-botto=
+m:5px"><div style=3D"text-align:left;font-family:'Times New Roman';font-siz=
+e:16px;color:#7e7e7e;line-height:18px;mso-line-height:exactly;mso-text-rais=
+e:1px"><p style=3D"padding: 0; margin: 0;"><span style=3D"font-family:Arial=
+;"><em>Jeff Esposito</em></span></p><p style=3D"padding: 0; margin: 0;"><sp=
+an style=3D"font-family:Arial;"><em>Publisher</em></span></p><p style=3D"pa=
+dding: 0; margin: 0;"><span style=3D"font-family:Arial;"><em>Threatpost</em=
+></span></p></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!-- content end -->
+          </center>
+        </td>
+    </tr>
+  </table>
+<img src=3D"https://links=2Ethreatpost=2Ecom/o/2GO/dYv8CD26kDGkbN_Jgxu8uy/E=
+zx/F/825dad54" alt=3D""></body>
+</html>
+
+
+----_=_NextPart1593_8e920c31-002c-445d-898f-a6939d355d0e--
+

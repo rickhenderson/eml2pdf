@@ -1,0 +1,117 @@
+Received: from XCH211YKF.rim.net (10.12.114.211) by XCH211CNC.rim.net (10.3.27.116)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2308.27 via Mailbox
+ Transport; Thu, 7 Jul 2022 14:24:21 -0400
+Received: from XCH211CNC.rim.net (10.3.27.116) by XCH211YKF.rim.net (10.12.114.211)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2308.27; Thu, 7 Jul
+ 2022 14:24:20 -0400
+Received: from XCH211CNC.rim.net ([fe80::b4db:1072:fb01:592b]) by XCH211CNC.rim.net
+ ([fe80::b4db:1072:fb01:592b%7]) with mapi id 15.01.2308.027; Thu, 7 Jul 2022
+ 14:24:20 -0400
+From: "Rick Henderson"
+To: "Rick Henderson" <rihenderson@blackberry.com>
+Subject: Simple Image Attached
+Thread-Topic: Simple Image Attached
+Thread-Index: AdiSLrYgT0rImjwGTqGaEvdwryEfvA==
+Date: Thu, 7 Jul 2022 14:24:20 -0400
+Message-ID: <810f396cb0fa499094beca6490fbccbe@blackberry.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator: <810f396cb0fa499094beca6490fbccbe@blackberry.com>
+MIME-Version: 1.0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-AuthSource: XCH211CNC.rim.net
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-Originating-IP: [100.64.197.167]
+X-MS-Exchange-Organization-Network-Message-Id: 01edec7e-5262-49c0-150d-08da6045e930
+Return-Path: rihenderson@blackberry.com
+X-MS-Exchange-Organization-AVStamp-Enterprise: 1.0
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.4804606
+X-MS-Exchange-Processed-By-BccFoldering: 15.01.2308.027
+Sender: "Rick Henderson"
+X-MS-Exchange-Organization-OriginalClientIPAddress: 100.64.197.167
+X-MS-Exchange-Organization-OriginalServerIPAddress: 10.3.27.116
+Content-Type: multipart/mixed;
+ boundary="--_=_NextPart249_8592678f-7ded-4e54-8cfd-0f1effd36384"
+
+This is a multi-part message in MIME format.
+
+----_=_NextPart249_8592678f-7ded-4e54-8cfd-0f1effd36384
+Content-Type: multipart/alternative; boundary="--_=_NextPart248_434c1ca8-8992-4c34-8fe2-2c0f6c30d685"
+
+
+----_=_NextPart248_434c1ca8-8992-4c34-8fe2-2c0f6c30d685
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+This file has a bitmap image attached=2E
+
+=20
+
+
+----_=_NextPart248_434c1ca8-8992-4c34-8fe2-2c0f6c30d685
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas=2Emicrosoft=2Ecom/office/2004/12/omml" xmlns=3D"h=
+ttp://www=2Ew3=2Eorg/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)"><sty=
+le><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p=2EMsoNormal, li=2EMsoNormal, div=2EMsoNormal
+	{margin:0cm;
+	font-size:11=2E0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+span=2EEmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+=2EMsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612=2E0pt 792=2E0pt;
+	margin:72=2E0pt 72=2E0pt 72=2E0pt 72=2E0pt;}
+div=2EWordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3D"EN-CA" link=3D"#0563=
+C1" vlink=3D"#954F72" style=3D"word-wrap:break-word"><div class=3D"WordSect=
+ion1"><p class=3D"MsoNormal">This file has a bitmap image attached=2E<o:p><=
+/o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p></div></body></html>
+----_=_NextPart248_434c1ca8-8992-4c34-8fe2-2c0f6c30d685--
+
+----_=_NextPart249_8592678f-7ded-4e54-8cfd-0f1effd36384
+Content-Type: application/octet-stream; name="blackbitmap.bmp"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="blackbitmap.bmp"
+
+Qk12AQAAAAAAADYAAAAoAAAACgAAAAoAAAABABgAAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+----_=_NextPart249_8592678f-7ded-4e54-8cfd-0f1effd36384--
+
